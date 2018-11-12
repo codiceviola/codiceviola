@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Codice viola</title>
+    <link rel="stylesheet" href="dist/codiceviola.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#60327E">
+    <meta name="description" content="Codice Viola è impegnata a migliorare la sopravvivenza e la qualità di vita dei pazienti affetti da adenocarcinoma del pancreas." />
+    
+    <!-- Open Graph for social networks -->
+    <meta property="og:locale"       content="it_IT" />
+    <meta property="og:type"         content="website" />
+    <meta property="og:site_name"    content="Codice Viola" />
+    <meta property="og:title"        content="Codice Viola" />
+    <meta property="og:description"  content="Codice Viola è impegnata a migliorare la sopravvivenza e la qualità di vita dei pazienti affetti da adenocarcinoma del pancreas." />
+    <meta property="og:url"          content="codiceviola.org" />
+    <meta name="twitter:card"        content="summary_large_image" />
+    <meta name="twitter:site"        content="@TumorePancreas" />
+    <meta name="twitter:title"       content="Codice Viola" />
+    <meta name="twitter:description" content="Codice Viola è impegnata a migliorare la sopravvivenza e la qualità di vita dei pazienti affetti da adenocarcinoma del pancreas." />
+    <meta name="twitter:image"       content="%%" />
+    <link rel="twitter"              href="https://twitter.com/TumorePancreas" type="text/html" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
+  </head>
+  <body>
+    <section class="is-flex is-horizontal-center">
+      <figure class="image">
+        <a href="/"><img src="images/codiceviola.png"></a>
+      </figure>
+    </section>
+    <section class="section">
+      <div class="container is-fluid">
+        <div class="columns">
+          <div class="column is-narrow">
+            <ul id="menu">
+              <li><h1 class="title cv-title"><a href="#" id="who-ref">Chi siamo</a></h1></li>
+              <li><h1 class="title cv-title"><a target="_blank" href="http://giornatamondialetumorepancreas.org/">Eventi</a></h1></li>
+              <li><h1 class="title cv-title"><a target="_blank" href="http://tumorepancreas.com/">Blog</a></h1></li>
+              <li><h1 class="title cv-title"><a target="_blank" href="mailto:info@codiceviola.org">Contatti</a></h1></li>
+            </ul>
+          </div>
+          <div class="column cv-text">
+            <div id="home">
+              <p>
+                <span class="has-text-link">Codice Viola</span> è impegnata a migliorare la sopravvivenza e la
+                qualità di vita dei pazienti affetti da adenocarcinoma del
+                pancreas. <br>
+              </p>
+              <p>
+                Il nostro impegno è focalizzato a fornire: <br>
+                
+                supporto ai pazienti e alle famiglie facilitando l’accesso alle
+                conoscenze cliniche aggiornate sulla base di evidenze scientifiche <br>
+              
+                
+                creazione di consapevolezza nella comunità dei pazienti e
+                familiari e nell’opinione pubblica dei problemi che devono
+                affrontare i malati affetti da adenocarcinoma del pancreas
+
+                patrocinio delle istanze dei pazienti e della ricerca presso le
+                istituzioni pubbliche <span class="has-text-link">preposte</span> al governo della salute
+              </p>
+              <p>
+                <br>
+                La quota associativa è pari a <strong>20€</strong> <br>
+                ma una qualsiasi altra donazione è gradita. <br>
+                <br>
+                Nel caso volessi aderire l’IBAN è: <br>
+                <span class="has-text-link" id="iban">IT28E0569620400000008637X43</span> intestato a Codice Viola
+                <br>
+                Causale: quota associativa (+ donazione)
+              </p>
+            </div>
+            <div id="who">
+              <p>
+                  L’Associazione Codice Viola nasce dall’esperienza e
+                  dall’incontro dei suoi fondatori: Daniele Maiolo, Piero Rivizzigno
+                  e Augusto Vico che toccati nei loro affetti dal tumore del
+                  pancreas hanno deciso di mettere a disposizione della
+                  comunità dei pazienti e dei familiari del tumore del pancreas la
+                  loro esperienza e il loro impegno <br><br>
+                  <a class='active' href="files/StatutoAttoCostitutivo.pdf">Statuto e Atto Costitutivo</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+            crossorigin="anonymous"></script>
+    <script>
+      $( document ).ready(function() {
+        $("#who-ref").on('click', function() {
+          $('#home').hide();
+          $('#who').show();
+          $(this).addClass('active');
+          return false;
+        });
+      })
+    </script>
+  </body>
+</html>
