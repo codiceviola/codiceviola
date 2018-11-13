@@ -34,8 +34,9 @@
     <section class="section">
       <div class="container is-fluid">
         <div class="columns">
-          <div class="column is-narrow">
+          <div class="column" id="menu-container">
             <ul id="menu">
+              <li><h1 class="title cv-title"><a href="/" id="mission-ref" class="active">Missione</a></h1></li>
               <li><h1 class="title cv-title"><a href="#" id="who-ref">Chi siamo</a></h1></li>
               <li><h1 class="title cv-title"><a target="_blank" href="http://giornatamondialetumorepancreas.org/">Eventi</a></h1></li>
               <li><h1 class="title cv-title"><a target="_blank" href="http://tumorepancreas.com/">Blog</a></h1></li>
@@ -47,18 +48,18 @@
               <p>
                 <span class="has-text-link">Codice Viola</span> è impegnata a migliorare la sopravvivenza e la
                 qualità di vita dei pazienti affetti da adenocarcinoma del
-                pancreas. <br>
+                pancreas. <br><br>
               </p>
               <p>
-                Il nostro impegno è focalizzato a fornire: <br>
+                Il nostro impegno è focalizzato a fornire: <br><br>
                 
                 supporto ai pazienti e alle famiglie facilitando l’accesso alle
-                conoscenze cliniche aggiornate sulla base di evidenze scientifiche <br>
+                conoscenze cliniche aggiornate sulla base di evidenze scientifiche <br><br>
               
                 
                 creazione di consapevolezza nella comunità dei pazienti e
                 familiari e nell’opinione pubblica dei problemi che devono
-                affrontare i malati affetti da adenocarcinoma del pancreas
+                affrontare i malati affetti da adenocarcinoma del pancreas <br><br>
 
                 patrocinio delle istanze dei pazienti e della ricerca presso le
                 istituzioni pubbliche <span class="has-text-link">preposte</span> al governo della salute
@@ -97,6 +98,7 @@
         $("#who-ref").on('click', function() {
           $('#home').hide();
           $('#who').show();
+          $(".cv-title a").removeClass('active');
           $(this).addClass('active');
           return false;
         });
