@@ -3,7 +3,7 @@
   "version": "1.4.0",
   "description": "The codice viola association website",
   "main": "index.js",
-  "repository": "https://github.com/puria/codice_viola",
+  "repository": "https://github.com/puria/codiceviola",
   "author": "pna",
   "license": "MIT",
   "scripts": {
