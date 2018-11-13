@@ -60,6 +60,10 @@ a.active {
     }
 }
 
+#iban {
+    @extend .is-size-5-mobile;
+}
+
 #who {
     display: none;
 }
