@@ -40,6 +40,7 @@
               <li><h1 class="title cv-title"><a href="#" id="who-ref">Chi siamo</a></h1></li>
               <li><h1 class="title cv-title"><a target="_blank" href="http://giornatamondialetumorepancreas.org/">Eventi</a></h1></li>
               <li><h1 class="title cv-title"><a target="_blank" href="http://tumorepancreas.com/">Blog</a></h1></li>
+              <li><h1 class="title cv-title"><a href="#" id="donate-ref">Adesione</a></h1></li>
               <li><h1 class="title cv-title"><a target="_blank" href="mailto:info@codiceviola.org">Contatti</a></h1></li>
             </ul>
           </div>
@@ -64,16 +65,6 @@
                 patrocinio delle istanze dei pazienti e della ricerca presso le
                 istituzioni pubbliche <span class="has-text-link">preposte</span> al governo della salute
               </p>
-              <p>
-                <br>
-                La quota associativa è pari a <strong>20€</strong> <br>
-                ma una qualsiasi altra donazione è gradita. <br>
-                <br>
-                Nel caso volessi aderire l’IBAN è: <br>
-                <small class="has-text-link" id="iban">IT28E0569620400000008637X43</small> intestato a Codice Viola
-                <br>
-                Causale: quota associativa (+ donazione)
-              </p>
             </div>
             <div id="who">
               <p>
@@ -86,6 +77,18 @@
                   <a class='active' href="files/StatutoAttoCostitutivo.pdf">Statuto e Atto Costitutivo</a>
               </p>
             </div>
+            <div id="donate">
+              <p>
+                <br>
+                La quota associativa è pari a <strong>20€</strong> <br>
+                ma una qualsiasi altra donazione è gradita. <br>
+                <br>
+                Nel caso volessi aderire l’IBAN è: <br>
+                <small class="has-text-link" id="iban">IT28E0569620400000008637X43</small> intestato a Codice Viola
+                <br>
+                Causale: quota associativa (+ donazione)
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -96,8 +99,15 @@
     <script>
       $( document ).ready(function() {
         $("#who-ref").on('click', function() {
-          $('#home').hide();
+          $('#home, #donate').hide();
           $('#who').show();
+          $(".cv-title a").removeClass('active');
+          $(this).addClass('active');
+          return false;
+        });
+        $("#donate-ref").on('click', function() {
+          $('#home, #who').hide();
+          $('#donate').show();
           $(".cv-title a").removeClass('active');
           $(this).addClass('active');
           return false;

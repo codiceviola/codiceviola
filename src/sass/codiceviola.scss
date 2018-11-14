@@ -44,19 +44,15 @@ a.active {
 }
 
 .cv-title {
-    font-size: 4rem;
+    font-size: 3.6rem;
     @extend .is-size-3-mobile;
     font-family: "Merriweather Sans";
-    text-shadow: $pink 0.375rem 0.375rem;
 
     @include mobile {
-        text-shadow: $pink 0.175rem 0.175rem;
     }
 
     &:hover {
         cursor: pointer;
-        text-shadow: $grey-light 0.29rem 0.29rem;
-        @include mobile { text-shadow: $cerise 0.175rem 0.175rem }
     }
 }
 
@@ -64,7 +60,7 @@ a.active {
     @extend .is-size-6-mobile;
 }
 
-#who {
+#who, #donate {
     display: none;
 }
 
