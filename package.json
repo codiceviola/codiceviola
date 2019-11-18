@@ -1,7 +1,7 @@
 {
   "name": "codiceviola",
   "version": "1.21.0",
-  "description": "The codice viola association website",
+  "description": "The codiceviola association website",
   "main": "index.js",
   "repository": "https://github.com/puria/codiceviola",
   "author": "pna",

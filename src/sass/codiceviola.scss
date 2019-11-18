@@ -31,25 +31,45 @@ $input-shadow: none;
     justify-content: center;
 }
 
+#logo {
+    top: -32px;
+    left: -52px;
+    img {
+        width: 310px;
+    }
+}
+
 a.active {
     text-decoration: underline;
 }
 
+hr {
+    background-color: rgba($primary, 0.3);
+    margin-left: 18%;
+    margin-right: 18%;
+}
+
 .cv-text {
-    p {
+    padding-top: 12px;
+	padding-left: 30px;
+	padding-right: 90px;
+    p, a {
         @extend .is-size-3;
         @extend .is-size-5-mobile;
+        text-align: center;
+    }
+
+    h2 {
+        @extend .is-size-2;
+        @extend .is-size-4-mobile;
         text-align: center;
     }
 }
 
 .cv-title {
-    font-size: 3.6rem;
-    @extend .is-size-3-mobile;
+    font-size: 2.6rem;
+    @extend .is-size-4-mobile;
     font-family: "Merriweather Sans";
-
-    @include mobile {
-    }
 
     &:hover {
         cursor: pointer;
@@ -60,7 +80,7 @@ a.active {
     @extend .is-size-6-mobile;
 }
 
-#who, #donate {
+#who, #donate, #events {
     display: none;
 }
 
@@ -75,8 +95,13 @@ a.active {
         font-family: "Merriweather Sans";
         .fab {
             margin-right: 30px;
-            font-size: 3.6em;
+            font-size: 2.6em;
             color: $link;
+
+            @include mobile {
+                font-size: 2rem;
+            }
+            @extend .is-size-4-mobile;
         }
     }
 }

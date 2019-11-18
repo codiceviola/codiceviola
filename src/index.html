@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#60327E">
     <meta name="description" content="Codice Viola è impegnata a migliorare la sopravvivenza e la qualità di vita dei pazienti affetti da adenocarcinoma del pancreas." />
-    
+
     <!-- Open Graph for social networks -->
     <meta property="og:locale"       content="it_IT" />
     <meta property="og:type"         content="website" />
@@ -26,21 +26,24 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
   </head>
   <body>
-    <section class="is-flex is-horizontal-center">
-      <figure class="image">
-        <a href="/"><img src="images/codiceviola.png"></a>
-      </figure>
-    </section>
     <section class="section">
       <div class="container is-fluid">
         <div class="columns">
           <div class="column" id="menu-container">
-            <ul id="menu">
+            <figure class="image" id="logo">
+              <a href="/"><img src="images/codiceviola.png"></a>
+            </figure>
+            <a role="button" class="navbar-burger" data-target="menu" aria-label="menu" aria-expanded="false">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+            <ul id="menu" class="is-hidden-touch">
               <li><h1 class="title cv-title"><a href="/" id="mission-ref" class="active">Missione</a></h1></li>
-              <li><h1 class="title cv-title"><a href="#" id="who-ref">Chi siamo</a></h1></li>
-              <li><h1 class="title cv-title"><a target="_blank" href="http://giornatamondialetumorepancreas.org/">Eventi</a></h1></li>
+              <li><h1 class="title cv-title"><a href="#who" id="who-ref">Chi siamo</a></h1></li>
+              <li><h1 class="title cv-title"><a href="#events" id="events-ref">Eventi</a></h1></li>
               <li><h1 class="title cv-title"><a target="_blank" href="http://tumorepancreas.com/">Blog</a></h1></li>
-              <li><h1 class="title cv-title"><a href="#" id="donate-ref">Adesione</a></h1></li>
+              <li><h1 class="title cv-title"><a href="#donate" id="donate-ref">Sostienici</a></h1></li>
               <li><h1 class="title cv-title"><a target="_blank" href="mailto:info@codiceviola.org">Contatti</a></h1></li>
               <li>
                 <a target="_blank" href="https://twitter.com/@tumorepancreas"><i class="title fab fa-twitter"></i></a>
@@ -52,17 +55,18 @@
           <div class="column cv-text">
             <div id="home">
               <p>
+              <br>
                 <span class="has-text-link">Codice Viola</span> è impegnata a migliorare la sopravvivenza e la
                 qualità di vita dei pazienti affetti da adenocarcinoma del
                 pancreas. <br><br>
               </p>
               <p>
                 Il nostro impegno è focalizzato a fornire: <br><br>
-                
+
                 supporto ai pazienti e alle famiglie facilitando l’accesso alle
                 conoscenze cliniche aggiornate sulla base di evidenze scientifiche <br><br>
-              
-                
+
+
                 creazione di consapevolezza nella comunità dei pazienti e
                 familiari e nell’opinione pubblica dei problemi che devono
                 affrontare i malati affetti da adenocarcinoma del pancreas <br><br>
@@ -73,6 +77,7 @@
             </div>
             <div id="who">
               <p>
+                <br>
                   L’Associazione Codice Viola nasce dall’esperienza e
                   dall’incontro dei suoi fondatori: Daniele Maiolo, Piero Rivizzigno
                   e Augusto Vico che toccati nei loro affetti dal tumore del
@@ -82,17 +87,48 @@
                   <a class='active' href="files/StatutoAttoCostitutivo.pdf">Statuto e Atto Costitutivo</a>
               </p>
             </div>
+            <div id="events">
+              <p><br></p>
+              <a href="https://www.facebook.com/CodiceViola/photos/a.106585730280303/270367567235451">
+              <h2>TUMORE AL PANCREAS E APPROPRIATEZZA TERAPEUTICA</h2>
+              <p>Milano, 18 novembre 2019</p>
+              </a>
+              <br>
+              <hr>
+              <br>
+              <a href="https://www.facebook.com/events/233391677611896/">
+              <h2>Familiarità e mutazione BRCA nel tumore del pancreas</h2>
+              <p>Milano, 2 marzo 2019</p>
+              </a>
+              <br>
+              <hr>
+              <br>
+              <h2>Giornata Mondiale del Tumore Pancreas</h2>
+              <p>
+              <a target="_blank" href="http://www.giornatamondialetumorepancreas.org/">Rozzano, Humanitas, 15 Novembre 2018</a><br>
+              <a target="_blank" href="http://www.giornatamondialetumorepancreas.org/gmtp2017.html">Bologna, S. Orsola,16 Novembre 2017</a><br>
+              <a target="_blank" href="http://www.giornatamondialetumorepancreas.org/gmtp2016.html">Milano, S. Raffaele, 17 Novembre 2016</a><br>
+              </p>
+            </div>
             <div id="donate">
               <p>
                 <br>
-                La quota associativa è pari a <strong>20€</strong>.<br><br>
-                Una qualsiasi altra donazione è gradita. <br>
+                Nel caso volessi fare una <strong>donazione</strong> il codice IBAN è: <br>
+                <small class="has-text-link" class="iban">IT28E0569620400000008637X43</small>
+                <br> intestato a Codice Viola
                 <br>
-                Nel caso volessi aderire l’IBAN è: <br>
-                <small class="has-text-link" id="iban">IT28E0569620400000008637X43</small>
-				<br> intestato a Codice Viola
+                Causale: Donazione
+              </p>
+                <hr/>
+              <p>
+                Se volessi diventare <strong>socio</strong> di Codice Viola <br>la quota associativa è pari a <strong>20€</strong> e il codice IBAN è: <br>
+                <small class="has-text-link" class="iban">IT28E0569620400000008637X43</small>
+                <br> intestato a Codice Viola
                 <br>
-                Causale: quota associativa (+ donazione)
+                Causale: Adesione
+                <br>
+                <br>
+                <a href="mailto:info@codiceviola.org?subject=Adesione%20all%27associazione%20Codice%20Viola&body=Grazie%20per%20l%E2%80%99interesse%21%0A%0APer%20aderire%20all%E2%80%99associazione%20Codice%20Viola%20dovrai%20completare%20le%20informazioni%20elencate%20qui%20di%20seguito.%0A%0ANome%3A%0ACognome%3A%0ACodice%20Fiscale%3A%0AIndirizzo%3A%0AIndirizzo%20posta%20elettronica%3A%0A%0AL%E2%80%99adesione%20si%20riterr%C3%A0%20completata%20quando%20verr%C3%A0%20effettuato%20il%20bonifico%20bancario%20di%2020%E2%82%AC%20al%20seguente%20codice%20IBAN%20%0A%0ACordialit%C3%A0%0ALa%20squadra%20Codice%20Viola" class="button is-primary is-large modal-button" aria-haspopup="true">Diventa socio!</a>
               </p>
             </div>
           </div>
@@ -104,16 +140,28 @@
             crossorigin="anonymous"></script>
     <script>
       $( document ).ready(function() {
+
+        $(".navbar-burger").click(function() {
+          $("#menu").toggleClass("is-active, is-hidden-touch");
+        });
+
         $("#who-ref").on('click', function() {
-          $('#home, #donate').hide();
+          $('#home, #donate, #events').hide();
           $('#who').show();
           $(".cv-title a").removeClass('active');
           $(this).addClass('active');
           return false;
         });
         $("#donate-ref").on('click', function() {
-          $('#home, #who').hide();
+          $('#home, #who, #events').hide();
           $('#donate').show();
+          $(".cv-title a").removeClass('active');
+          $(this).addClass('active');
+          return false;
+        });
+        $("#events-ref").on('click', function() {
+          $('#home, #who, #danate').hide();
+          $('#events').show();
           $(".cv-title a").removeClass('active');
           $(this).addClass('active');
           return false;
