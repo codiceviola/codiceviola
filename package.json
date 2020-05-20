@@ -15,11 +15,11 @@
     "deploy": "yarn run css-build && yarn version --minor && scp -r src/* www:/var/www/codiceviola.org/www/"
   },
   "dependencies": {
-    "bulma": "^0.7.2"
+    "bulma": "^0.8.2"
   },
   "devDependencies": {
-    "http-server": "^0.11.1",
-    "node-sass": "^4.13.1",
+    "http-server": "^0.12.3",
+    "node-sass": "^4.14.1",
     "yarn-run-all": "^3.1.1"
   }
 }
