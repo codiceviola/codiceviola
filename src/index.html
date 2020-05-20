@@ -44,7 +44,7 @@
               <li><h1 class="title cv-title"><a href="#events" id="events-ref">Eventi</a></h1></li>
               <li><h1 class="title cv-title"><a target="_blank" href="http://tumorepancreas.com/">Blog</a></h1></li>
               <li><h1 class="title cv-title"><a href="#donate" id="donate-ref">Sostienici</a></h1></li>
-              <li><h1 class="title cv-title"><a target="_blank" href="mailto:info@codiceviola.org">Contatti</a></h1></li>
+              <li><h1 class="title cv-title"><a href="#contacts" id="contacts-ref">Contatti</a></h1></li>
               <li>
                 <a target="_blank" href="https://twitter.com/@tumorepancreas"><i class="title fab fa-twitter"></i></a>
                 <a target="_blank" href="https://www.facebook.com/CodiceViola/"><i class="title fab fa-facebook"></i></a>
@@ -53,7 +53,7 @@
             </ul>
           </div>
           <div class="column cv-text">
-            <div id="home">
+            <div id="mission">
               <p class="has-text-primary has-text-weight-bold">
               Aiuta la ricerca clinica indipendente<br/>Fai una donazione alla<br/> Associazione Codice Viola
               <br/>
@@ -78,7 +78,7 @@
                 <br>Causale: Donazione</small>
               </p>
 
-              <p>Contatto diretto: <br><strong>+39 391 450 8647</strong></p>
+              <p>Contatto diretto: <br><strong><a href="tel:+393914508647">+39 391 450 8647</a></strong></p>
 
 
               <br>
@@ -174,6 +174,20 @@
                 <a href="mailto:info@codiceviola.org?subject=Adesione%20all%27associazione%20Codice%20Viola&body=Grazie%20per%20l%E2%80%99interesse%21%0A%0APer%20aderire%20all%E2%80%99associazione%20Codice%20Viola%20dovrai%20completare%20le%20informazioni%20elencate%20qui%20di%20seguito.%0A%0ANome%3A%0ACognome%3A%0ACodice%20Fiscale%3A%0AIndirizzo%3A%0AIndirizzo%20posta%20elettronica%3A%0A%0AL%E2%80%99adesione%20si%20riterr%C3%A0%20completata%20quando%20verr%C3%A0%20effettuato%20il%20bonifico%20bancario%20di%2020%E2%82%AC%20al%20seguente%20codice%20IBAN%20%0A%0ACordialit%C3%A0%0ALa%20squadra%20Codice%20Viola" class="button is-primary is-large modal-button" aria-haspopup="true">Diventa socio!</a>
               </p>
             </div>
+            <div id="contacts">
+              <p>
+                Puoi contattarci via: <br>
+                <br>
+                <br>
+                <strong>email: </strong><a target="_blank" href="mailto:info@codiceviola.org">info@codiceviola.org</a>
+                <br>
+                <br>
+                <strong>telefono: </strong><a href="tel:+393914508647">+39 391 450 8647</a>
+                <br>
+                <br>
+                <strong>facebook: </strong><a href="https://fb.com/CodiceViola">fb.com/CodiceViola</a>
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -188,27 +202,20 @@
           $("#menu").toggleClass("is-active, is-hidden-touch");
         });
 
-        $("#who-ref").on('click', function() {
-          $('#home, #donate, #events').hide();
-          $('#who').show();
-          $(".cv-title a").removeClass('active');
-          $(this).addClass('active');
-          return false;
-        });
-        $("#donate-ref").on('click', function() {
-          $('#home, #who, #events').hide();
-          $('#donate').show();
-          $(".cv-title a").removeClass('active');
-          $(this).addClass('active');
-          return false;
-        });
-        $("#events-ref").on('click', function() {
-          $('#home, #who, #danate').hide();
-          $('#events').show();
-          $(".cv-title a").removeClass('active');
-          $(this).addClass('active');
-          return false;
-        });
+        const ids = $(".title a").toArray().map(e => `#${e.id}`).filter(a => a !== '#');
+        const pages = ids.map(i => [i, i.slice(0, -4)]);
+        for (const p of pages) {
+          const [id, page] = p;
+          $(id).on("click", () => {
+            const others = Object.values(pages).filter(x => x !== p)
+            const other_ids = others.map(x => x[1]).join(',')
+            $(other_ids).hide();
+            $(page).show();
+            $(".cv-title a").removeClass('active');
+            $(id).addClass('active');
+            return false
+          })
+        }
       })
     </script>
   </body>

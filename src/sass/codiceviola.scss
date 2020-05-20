@@ -1,14 +1,14 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700|Merriweather:400,700');
+@import url("https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700|Merriweather:400,700");
 
 // Set your brand colors
-$purple: #60327E;
-$pink: #D3C7DB;
+$purple: #60327e;
+$pink: #d3c7db;
 $brown: #696b59;
-$beige-light: #D0D1CD;
-$beige-lighter: #EFF0EB;
-$cerise: #C5B4D0;
-$light-purple: #997CAC;
+$beige-light: #d0d1cd;
+$beige-lighter: #eff0eb;
+$cerise: #c5b4d0;
+$light-purple: #997cac;
 
 // Update Bulma's global variables
 $family-sans-serif: "Merriweather", sans-serif;
@@ -28,84 +28,88 @@ $input-shadow: none;
 @import "../../node_modules/bulma/bulma.sass";
 
 .is-horizontal-center {
-    justify-content: center;
+  justify-content: center;
 }
 
 #logo {
-    top: -32px;
-    left: -52px;
-    img {
-        width: 310px;
-    }
+  top: -32px;
+  left: -52px;
+  img {
+    width: 310px;
+  }
 }
 
 a.active {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 hr {
-    background-color: rgba($primary, 0.3);
-    margin-left: 18%;
-    margin-right: 18%;
+  background-color: rgba($primary, 0.3);
+  margin-left: 18%;
+  margin-right: 18%;
 }
 
 .cv-text {
-    padding-top: 12px;
-	padding-left: 30px;
-	padding-right: 90px;
-    p, a {
-        @extend .is-size-3;
-        @extend .is-size-5-mobile;
-        text-align: center;
-    }
+  padding-top: 12px;
+  padding-left: 30px;
+  padding-right: 90px;
+  p,
+  a {
+    @extend .is-size-3;
+    @extend .is-size-5-mobile;
+    text-align: center;
+  }
 
-    h2 {
-        @extend .is-size-2;
-        @extend .is-size-4-mobile;
-        text-align: center;
-    }
+  h2 {
+    @extend .is-size-2;
+    @extend .is-size-4-mobile;
+    text-align: center;
+  }
 }
 
 .cv-title {
-    font-size: 2.6rem;
-    @extend .is-size-4-mobile;
-    font-family: "Merriweather Sans";
+  font-size: 2.6rem;
+  @extend .is-size-4-mobile;
+  font-family: "Merriweather Sans";
 
-    &:hover {
-        cursor: pointer;
-    }
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 #iban {
-    @extend .is-size-6-mobile;
+  @extend .is-size-6-mobile;
 }
 
-#who, #donate, #events {
-    display: none;
+#who,
+#donate,
+#events,
+#contacts {
+  display: none;
 }
 
 #menu-container {
-    @extend .is-narrow;
+  @extend .is-narrow;
 }
 
 #menu {
-    li {
-        padding-bottom: 20px;
-        padding-right: 5rem;
-        font-family: "Merriweather Sans";
-        .fab {
-            margin-right: 30px;
-            font-size: 2.6em;
-            color: $link;
+  li {
+    padding-bottom: 20px;
+    padding-right: 5rem;
+    font-family: "Merriweather Sans";
+    .fab {
+      margin-right: 30px;
+      font-size: 2.6em;
+      color: $link;
 
-            @include mobile {
-                font-size: 2rem;
-            }
-            @extend .is-size-4-mobile;
-        }
+      @include mobile {
+        font-size: 2rem;
+      }
+      @extend .is-size-4-mobile;
     }
+  }
 }
 
 p + p {
-    text-indent: 1em;
+  text-indent: 1em;
 }
