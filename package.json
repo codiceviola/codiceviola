@@ -1,6 +1,6 @@
 {
   "name": "codiceviola",
-  "version": "1.21.0",
+  "version": "1.22.0",
   "description": "The codiceviola association website",
   "main": "index.js",
   "repository": "https://github.com/puria/codiceviola",
@@ -12,7 +12,7 @@
     "serve": "http-server ./src",
     "clean": "rimraf src/dist",
     "start": "npm-run-all --parallel css-watch serve",
-    "deploy": "yarn run css-build && yarn version --minor && scp -r src/* www:/var/www/codiceviola.org/www/"
+    "deploy": "yarn run build && yarn version --minor && scp -r src/* www:/var/www/codiceviola.org/www/"
   },
   "dependencies": {
     "bulma": "^0.8.2"
