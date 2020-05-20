@@ -1,6 +1,6 @@
 {
   "name": "codiceviola",
-  "version": "1.22.0",
+  "version": "1.23.0",
   "description": "The codiceviola association website",
   "main": "index.js",
   "repository": "https://github.com/puria/codiceviola",
