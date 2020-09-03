@@ -13,7 +13,7 @@
     "clean": "rimraf src/dist",
     "start": "npm-run-all --parallel css-watch serve",
     "deploy:old": "yarn run build && yarn version --minor && scp -r src/* www:/var/www/codiceviola.org/www/",
-    "deploy": "yarn run build && yarn version --minor"
+    "deploy": "yarn run build"
   },
   "dependencies": {
     "bulma": "^0.9.0"
