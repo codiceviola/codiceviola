@@ -12,10 +12,11 @@
     "serve": "http-server ./src",
     "clean": "rimraf src/dist",
     "start": "npm-run-all --parallel css-watch serve",
-    "deploy": "yarn run build && yarn version --minor && scp -r src/* www:/var/www/codiceviola.org/www/"
+    "deploy:old": "yarn run build && yarn version --minor && scp -r src/* www:/var/www/codiceviola.org/www/",
+    "deploy": "yarn run build && yarn version --minor"
   },
   "dependencies": {
-    "bulma": "^0.8.2"
+    "bulma": "^0.9.0"
   },
   "devDependencies": {
     "http-server": "^0.12.3",
