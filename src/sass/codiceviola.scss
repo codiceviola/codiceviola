@@ -49,6 +49,11 @@ hr {
   margin-right: 18%;
 }
 
+.form {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 .cv-text {
   padding-top: 12px;
   padding-left: 30px;
@@ -112,4 +117,10 @@ hr {
 
 p + p {
   text-indent: 1em;
+}
+
+#privacy {
+  .cv-text a {
+    @extend .is-size-6;
+  }
 }
