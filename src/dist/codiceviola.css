@@ -6030,7 +6030,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 .is-size-5 {
   font-size: 1.25rem !important; }
 
-.is-size-6, #privacy .cv-text a {
+.is-size-6, .cv-text #privacy *, .cv-text a#privacy, #privacy a {
   font-size: 1rem !important; }
 
 .is-size-7 {
@@ -6982,3 +6982,6 @@ hr {
 
 p + p {
   text-indent: 1em; }
+
+#privacy a {
+  font-size: 1rem !important; }

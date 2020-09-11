@@ -65,6 +65,10 @@ hr {
     text-align: center;
   }
 
+  #privacy *, a#privacy {
+    @extend .is-size-6;
+  }
+
   h2 {
     @extend .is-size-2;
     @extend .is-size-4-mobile;
@@ -120,7 +124,8 @@ p + p {
 }
 
 #privacy {
-  .cv-text a {
+  a {
     @extend .is-size-6;
+    font-size: 1rem !important;
   }
 }
