@@ -65,7 +65,8 @@ hr {
     text-align: center;
   }
 
-  #privacy *, a#privacy {
+  .cb-links *,
+  a.cb-links {
     @extend .is-size-6;
   }
 
@@ -93,6 +94,7 @@ hr {
 #who,
 #donate,
 #events,
+#membership,
 #contacts {
   display: none;
 }
@@ -128,4 +130,13 @@ p + p {
     @extend .is-size-6;
     font-size: 1rem !important;
   }
+}
+
+h3 {
+  background-color: $primary;
+  font-size: 1.8em;
+  color: $beige-lighter;
+  padding: 0.5em;
+  margin-bottom: 20px;
+  text-align: center;
 }

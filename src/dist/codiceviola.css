@@ -6030,7 +6030,8 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 .is-size-5 {
   font-size: 1.25rem !important; }
 
-.is-size-6, .cv-text #privacy *, .cv-text a#privacy, #privacy a {
+.is-size-6, .cv-text .cb-links *,
+.cv-text a.cb-links, #privacy a {
   font-size: 1rem !important; }
 
 .is-size-7 {
@@ -6965,6 +6966,7 @@ hr {
 #who,
 #donate,
 #events,
+#membership,
 #contacts {
   display: none; }
 
@@ -6985,3 +6987,11 @@ p + p {
 
 #privacy a {
   font-size: 1rem !important; }
+
+h3 {
+  background-color: #60327e;
+  font-size: 1.8em;
+  color: #eff0eb;
+  padding: 0.5em;
+  margin-bottom: 20px;
+  text-align: center; }
